@@ -10,6 +10,10 @@
 
 ### W2
 
+1 The r, b, and g are floats because they values for these colors are fractions and float is the variable that is used for fractions
+2 The bounce variable is a int because the numbers required for it to bounce correctly are whole numbers
+3 The line of code was broken because there was no ; 
+
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
 
 ## Open-Source Assets
