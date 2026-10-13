@@ -18,6 +18,25 @@
 
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
 
+### W3
+
+Part One
+
+1. Parameters(int friendship, bool Knows secret) output is a string 
+
+2. Parameters(float sanity) output void
+
+3. Parameters(float timehit) output bool
+
+Part Two
+
+A metaphor I thought of is classes can be thought of as a cat's DNA, and the member variables can be the different cat breeds, and Methods can be the cats personality for example being timid.
+
+Part Three
+
+I think the balls get extremely bright when bouncing because the value only increases the more they bounce so hypothetically they will continue to get brighter for ever, or until the program ends 
+
+
 ## Open-Source Assets
 
 ### W1
