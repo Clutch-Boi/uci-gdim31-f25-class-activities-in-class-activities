@@ -1,12 +1,13 @@
 using TMPro;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class BallW3
+public class BallW3 : MonoBehaviour
 {
-    public SpriteRenderer ballRenderer;
-    private Rigidbody2D _rigidbody;
-    private float _speedMultiplier = 1.0f;
-    private float _speedThreshold = 10.0f;
+    [SerializeField] public SpriteRenderer ballRenderer;
+    [SerializeField] private Rigidbody2D _rigidbody;
+    [SerializeField] private float _speedMultiplier = 1.0f;
+    [SerializeField] private float _speedThreshold = 10.0f;
 
     // ------------------------------------------------------------------------
     // This method is called by Unity whenever the ball hits something.
@@ -17,8 +18,7 @@ public class BallW3
         // For example, we can use the variabled named 'linearVelocity' on
         //      our _rigidbody object by typing '_rigidbody.linearVelocity'.
         //
-        // Uncomment and fix this line to multiply the _rigidbody.linearVelocity
-        //      times the _speedMultiplier variable. 
+        _rigidbody.linearVelocity *= _speedMultiplier; 
         //
         // This will make the ball go faster (or slower!) depending on the value
         //      of _speedMultiplier. TUNE that value in the Inspector and see
@@ -31,7 +31,7 @@ public class BallW3
         // STEP 9 -------------------------------------------------------------
         // After you write the GetColorMultiplier method, simply uncomment
         //      the below line.
-        //ballRenderer.color *= GetColorMultiplier(Mathf.Abs(_rigidbody.linearVelocity.x), Mathf.Abs(_rigidbody.linearVelocity.y));
+       ballRenderer.color *= GetColorMultiplier(Mathf.Abs(_rigidbody.linearVelocity.x), Mathf.Abs(_rigidbody.linearVelocity.y));
         // STEP 9 -------------------------------------------------------------
     }
 
@@ -51,11 +51,19 @@ public class BallW3
     //      return a value of 1.5,
     //      otherwise, return a value of 1.0. 
 
-    //private ??? GetColorMultiplier(??? ???, ??? ???)
-    //{
-        // write the method body here!
-        
-    //}
+    private float GetColorMultiplier(float ballspeed, float speed)
+    {
+        float averageSpeed = (ballspeed + speed) / 2.0f;
+
+        if (averageSpeed > _speedThreshold)
+        {
+            return 1.5f;
+        }
+        else
+        {
+            return 1.0f;
+        }
+    }
 
     // STEP 8 ------------------------------------------------------------------
 }
