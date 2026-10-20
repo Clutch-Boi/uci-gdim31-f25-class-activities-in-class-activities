@@ -36,6 +36,11 @@ Part Three
 
 I think the balls get extremely bright when bouncing because the value only increases the more they bounce so hypothetically they will continue to get brighter for ever, or until the program ends 
 
+### W4
+
+1 I added Rigid Bodies to both cat and the soccer ball because both objects needed to be able to collide with each other the object with trigger on is the goal because the ball needs to pass THROUGH it 
+
+2 I stuggled with step 6 and I fixed it by adding a new float value to actually count down and store the time.
 
 ## Open-Source Assets
 
