@@ -42,6 +42,14 @@ I think the balls get extremely bright when bouncing because the value only incr
 
 2 I stuggled with step 6 and I fixed it by adding a new float value to actually count down and store the time.
 
+### W6
+
+1 _Movespeed, _Transform, NavMeshAgent 
+
+2 Start(), Update(), SetDestination()
+
+3 The start method should make the deer move when the game starts. The update method should check if the deer is still moving to the correct place every frame. The SetDestination() should stop the movement script after the deer makes it. 
+
 ## Open-Source Assets
 
 ### W1
