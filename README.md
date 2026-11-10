@@ -50,6 +50,21 @@ I think the balls get extremely bright when bouncing because the value only incr
 
 3 The start method should make the deer move when the game starts. The update method should check if the deer is still moving to the correct place every frame. The SetDestination() should stop the movement script after the deer makes it. 
 
+### W7
+
+Notes: Bats will need to have a [SerializedField] for the speed value this will need to be int( [SerializedField] public int speed ) We will use vector3 to track the transfrom of the players position at all times. This class will need to use the Update() and a collision() method 
+The methods should update() to check if the player is in the Collision() radius every frams.
+1. This class needs a speed and transform variable 
+
+2. This class will need an Update() method and a Startchase() and a stop Chase()
+
+3. The methods should start a chase if the parameters are met every frame and do the same with stopping the chase
+
+
+Startchase() player vector3 = bat vector3
+
+
+
 ## Open-Source Assets
 
 ### W1
