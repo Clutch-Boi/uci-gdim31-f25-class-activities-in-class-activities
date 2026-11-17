@@ -63,7 +63,8 @@ The methods should update() to check if the player is in the Collision() radius 
 
 Startchase() player vector3 = bat vector3
 
-
+### W8
+In step two the code was applying forward and backward movement globally so the Muskrat couldnt move locally to itself 
 
 ## Open-Source Assets
 
